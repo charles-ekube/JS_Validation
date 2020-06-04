@@ -15,7 +15,7 @@
                     document.querySelector('pre').textContent = 'Passwords must match';
                 }
                 else{
-                    document.querySelector('pre').textContent = 'successful login';
+                    document.querySelector('pre').textContent = 'successfully Registered';
                 }
             }
             
@@ -26,13 +26,10 @@
                 var password = Number(document.querySelector('#your_pass').value);
                 if(users.includes(username) && passes.includes(password)){
                     if(users.indexOf(username)== passes.indexOf(password)){
-                        alert('welcome');
+                        alert('welcome back!');
                     }
                      else{
-                    alert('fake details');
+                    alert('Wrong details');
                 }
-                }
-                else{
-                    alert('fraud');
                 }
             }
